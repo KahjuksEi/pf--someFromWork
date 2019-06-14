@@ -1,0 +1,608 @@
+<?
+    $pageTitle = 'Тарифные планы Экскаватор Ру';
+?>
+
+
+
+<style>
+  body{
+   font-family: 'exkavatorru', Helvetica, Arial, sans-serif;
+   font-size: 14px;  
+  }
+    h1 {
+    padding: 11px 0px 0px 20px;
+    font-size: 32px;
+    line-height: 46px;
+    font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    }
+    h2{
+    padding: 5px 0px 0px 0px;
+    font-size: 32px;
+    line-height: 38px;
+    font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    }   
+    .txt{
+    padding: 20px 0px 0px 20px;
+    font-size: 16px;
+    line-height: 28px;
+    }
+    .tit{
+    font-weight: bold;
+    text-align: left;  
+    padding: 7px 20px;
+    vertical-align: middle;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }   
+     .field{
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px 5px;
+    font-size: 14px;
+    line-height: 15px;
+    background: #f7f7f7;
+     }
+     .up{
+    background: #ffcb78;
+    } 
+    .yes{
+    background: #edfff7;    
+    }
+    .no{
+    background: #fff9f9;    
+    }
+    .cross{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZS      BJbWFnZVJlYWR5ccllPAAAAbNJREFUeNq0lQuTgjAMhFNEeYny//+lD3yh9vxaerZYxLk5M8MccybbJLtblNZavhFp9L9d9zxtPld/yXkFPp/14xG5XkXynKJ4S5     eLmDx+v9+1ZJl6D3w8imw2IrebSFmKKKWlKMKO2labnNPJAq/XIkmi/c7ToFMSKeg6AEUOB/tXREua2pEB3W5tA7bO1pDnTacMeeyrbUNQA6fpRGS5FKlrRh    YDyoF+kJdlIk3j1qf8ju1elTc17xRxKKvhnamGQR475wE4WEVR2G45YBh0OuxyGNTTdbBjdsd+IMqRotTnogUUAqtKxVVR18oQ5eQ0ZR4OZ/QBKJG8JANO4p    h+/RgBjQOjEJTgiJvqOEmiPyVRRyEpX3ZjARdW0/q9pZ2jnPinArUgxV7NvkPT3/GRme+oT8Pp3L5rw81DZc9VoNMxUFaCRheLcfD9PjDPE5i7ACJihKFT7Mrjm    SAApn42ixikLLVJYB3Y1xEH6GrlS8ry4BxKjbvh+nsiJC/PVe9zLbudJSamU2ciB+5Am2biPq4q2y0XEvdxRPwGHKLYKXtnqiEt0W/eP3ya1Lc+pj8CDACj2N6Pl     aZEZwAAAABJRU5ErkJggg==');    
+     }
+     .check{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZS      BJbWFnZVJlYWR5ccllPAAAAexJREFUeNrklW1z2jAMx6VCSbcmJi1Q8tCu+/7faN1ud7uDhPAQCi0UQxNNctawXhjbWHk1+XzJ2fHP8l+Sg0QEx7ATOJIdDVx/    C8jXeUKbzQaU7YBvNfFNwF/uY+oNItCrFbRbbcg7ROGZi/V/hfYZumKoWHo/hefsGU6v63Qw+PM0on4SGyiiOT1keQ5ar0Ey7SDwXdqneJi8ggrMsW3wrzzonj      qvpfj2OCa90XChXOjUznEX9NOkR/GoClWOA0HXh492Zxu8Ub6g+cMjJLJAr2C95uO0O3RVs7ECHRbflFBuTUcx1IPbH9ASPJvPQRYslgszKO/G2lDC7yZ9ioYD    1lAbqACRm7IVhF4AH85bWMnjxdMSltzFZFGWZwWcqz1vEc0eZhAlDF3r0tMC6sC1H8LN+8uKbCj69J5SGoyGMJmm5YSMNxoNsLiLNJoLALeToJQqoO8ud8    YCXy6hSM9owEcdpRNx1EBk7uV9qymAy9CwG+z0tFLSAZcidtFsI57nnJMC+3mlbONyxoQcqH3QSkn7DYXoIQlubOBZESjeTp6ShoHn//L4ey8hj5MbPRNyGL    MsWZZB7aQGTaNpAOHZBR58u0nlAMOFIJ5L9G+CkOVy8U+rE/f9QWIOqBSDZVl/Bf0t+P/6NX0XYAAtjAL6KsqzRAAAAABJRU5ErkJggg==');    
+     }
+     .check-dark{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAnpJREFUeNrsle1LU2EYxq/n7Gw7Jwt1UFH4ISyzJqWSmdRyJREqvUB96A8x3fwPHNI/0gcrghSLmlsWtcBUbCMpeqE3YkpzZ+fs7Tzdz9lExnTYZN96YIPtec5v13Xd9/2Mcc5RiyWhRqtmYHmnAG3Wz+c/ZyBLDO4mO3Z7xpj4nu0k4+RzPw/FDEzOGZDI+0CHip4jDjR4A0yqHurjoaiB6XkDeoZDMzgeL+h4tmRUH4U26+NPl9IWREtz2EieScaTBI8nzerAGtmfXkxDqF3TC1CRpo2S7W5xoq/NWQrWX/h59FsWNhvQfuMO2wyaCPv5k0Ud4VgaCYLKRaUyPdND0P52Fftd0gY4EfbxyIcMgu8MUsCQyQ7x07dK4aszPh4k6zPRtJWngObJtdNOSg87MUiF29sXYCXtFqLDQkV8rZDPvUiK3ovwuVG+mjCtPIOUaypTsC+gqoOhq9mBa10qGr2BEiFy7tUof/8jixWCMtoSr99/TEy8TkFiQ/zQPtlyIqBGdqNQCkHPUGtdOaWioTdQFp3VxwsTt/nUWx3LP3MQJwRcFORAow2qneFXIm9VnFKyoHbK9PwxBf0dSpnSErBYyw+H+YM3KUS/5yxV4rSwK/YlIlpQ+uygTL3HFVw6ocB1YXNoyV3RcnWcXaes2mgsTbPYQpKoeAEqfkTYv+hWcPkkQesrz1bZSH98NMzvR3TEqPXEzjq0TmE4d9SJgU4FezxbK93ydmseHGc3u1W0HpStOLJ5jjong6eVWqpT3Ra04iX0ZWqE332p4Ws8D6+bmp/6dNfZMbbdCa14u32aHOFa2kSTy4b63gD7l9Fn//+a1tdfAQYA2jAa2hszs9MAAAAASUVORK5CYII=');
+     }
+     .cross-dark{
+     background-position: center center;
+    background-repeat: no-repeat; 
+    background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAy9JREFUeNq0Ve1OE0EUPbNtl23BAkFFQY0EDESJUJRCIBKJBkxE//AuUngA/HgYEzEiGpSoGBpEigSIBjVKghAJtRZou213xzuzLf2E+IdNptnt3jlz7r3nnmWccxzFZS/25957H08kOUo1BkfHA1YsJu738T2dQ3MwOLsKY1gO48Aw3wwaGA/EsL6dxPWLGrqaSmBrv8/yQaeWdcys6miqcaC/RUOlWwE8mbgcxsG/Jp7NRzH3LQHD5HixGIODItoxzNPgcf8wn/6i4/VyDMFdE1thE4ze3PZoKMvCUtI3G5P3+OPZCGZX40iaVhabIQNPP4qD4vI5OWuBPg9Esb1jAeoJjjcrMYxR3PbUEM8txcIIf+KPYGIhioQB2JTMyYYJnKmy4UazhjiBTC7FJMvsmCTFOB3AYIcLva1OoGWUWaUg7DJqVGkJQyiSqxKFWG38MSQjkwB2ormgkh2tY5pCzVYkVqYUnlHmbVBxi06rcDHJcn9Tqh0hqmc4au4/Z7M9QY27c8WJ5nNEu3WUFahCp26/XdEx8SmKMDFXlMO1aqRAB9qc6LhQArs3owqWPyBCStOfqetUy9/hQobpS+yqrbShj6TmrSdJenMlWcBJpVq316uorbLjoJkUXARKXbUdbXVqAWhR4ARNU+BHAr+CSRxAVmYhDl3bSmLxZ6J4THYpZBlSOg3t/V+NqysU3G1z4So1P3tC94GFP3z4qmOctBzc5QWSMnlGfvngpyosVbScV6F1Wr5hbQ+MEGhcekQ+aDoft1ORWs03QxG7GTIxNhfF0lpCDlvGK+iMUIR0GjML0hVDUVOpoPeSBuF4r8h8xDjnZyT3k87TjbFek6iFEjyUikhVpC2YpXXaT4PTQ07XS2N9k1Z5aogENYN+7ITSSTq+fNYhxznH3Wr7HrFBxxAXHZ//HpfgJ8sVci0Sf4NlnTaK6+E+mepLcj7BUrUxdDeqssbuaw+L2+ZxasIABQjw9W1D+nH+RJVQcwR4nKj6yQkbTzvICjS4y5RDjD517bzzcZ3q6XYyqJ3FvyCxGR/foZ64VDKf7iIxArjomh/mB777jxh2VB/TfwIMAFquvTQgefhHAAAAAElFTkSuQmCC');
+     } 
+    .line-comm{
+    background: #204493;
+}
+.line-comm td{
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 14px;
+}
+.line-comm span{
+    display: block;
+    position: absolute;
+    margin: 4px 0px 0px -22px;
+    width: 20px;
+    font-size: 12px;
+}
+.button-green{
+display: block;
+background: #71c737;
+color: #fff;
+max-width: 240px;
+height: 18px;
+text-align: center;
+margin: 20px 0px 0px 0px;
+text-transform: uppercase;
+padding: 13px 4px 6px 4px;
+border-radius: 5px;
+font-size: 12px;
+font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;
+cursor: pointer;
+}
+.button-green:hover{
+background: #399227;
+}
+.button-green a{
+text-decoration: none;
+color: #fff;
+}
+.corp-index-page-contact .contact-info .rekl .call:hover{
+    background-color:#399227;
+}
+.corp-index-page-contact .contact-form .form .b-save:hover{
+    background-color:#0307CF;
+}
+.corp-index-right {
+    float: right;
+    margin: 0px 0px 0px 20px;
+    width: 240px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.corp-index-right-popular {
+    margin-top: 20px;
+    background: #EAEFFD;
+    padding: 0px 16px 16px 16px;
+}
+.corp-index-right-popular .tit {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding: 16px 0px 4px 0px;
+}
+.corp-index-right-popular ul {
+    list-style: none;
+    display: block;
+    padding: 0px;
+}
+.corp-index-right-popular ul li {
+    list-style: none;
+    display: block;
+    padding: 0px;
+}
+.corp-index-right-popular a {
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+/*стили формы*/
+.corp-index-page-contact {
+    border: 1px #e9e9e9 solid;
+    min-height: 10px;
+    margin: 20px 260px 0px 0px;
+    position: relative;
+}
+.corp-index-page-contact .contact-info {
+    width: 50%;
+    padding: 20px 20px 20px 20px;
+}
+.corp-index-page-contact .contact-info .rekl {
+    padding: 18px 0px 10px 0px;
+}
+.corp-index-page-contact .contact-info .rekl .tit {
+    padding: 2px 0px 2px 0px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.corp-index-page-contact .contact-form {
+    position: absolute;
+    width: 50%;
+    border-left: 1px #e9e9e9 solid;
+    height: 100%;
+    left: 50%;
+    top: 0px;
+    padding: 20px 20px 0px 20px;
+}
+.corp-index-page-contact .contact-form h3 {
+    padding: 0px 0px 0px 0px;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+.corp-index-page-contact .contact-info h3 {
+    padding: 0px 0px 0px 0px;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+.corp-index-page-contact .contact-info .rekl .phone {
+    padding: 2px 0px 2px 16px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+.corp-index-page-contact .contact-info .rekl .mail {
+    padding: 2px 0px 2px 16px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.corp-index-page-contact .contact-info .rekl .mail a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 0px 0px 24px;
+    background-position: 2px 8px;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAIAAABmGDE9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARlJREFUeNpivHXrVnV19atXr5iYmBgwwJ8/fzQ0NMrLy5mBlJ+f36lTp96+ffsTAygoKGRnZ69fv54ZaBIfH19ycvLNmzeBSpEN09fXLy4uXrNmzfbt25nl5OQuX778////uLi427dvw5Xq6upmZGSsWLFi7969bGxsTIyMjEDRLVu2HD58eMqUKUZGRkCumZnZxIkTjx8/vn//fog2ZllZ2b9//8rLywcEBJw5c8bR0RFokq2t7c6dOw0NDV+AATMQiIuLKysrV1ZWHjhwYP78+c+fP7e0tFy0aNGOHTu+ffuWnp7+8uXLhw8fMiYmJgLdsXHjRqABmOECNBKoFOgVxmvXrgEVbd68mZ2dHWv4GRgY5OfnAwQYANc8lP4Kzst/AAAAAElFTkSuQmCC');
+}
+.corp-index-page-contact .contact-info .rekl .skype {
+    padding: 2px 0px 2px 16px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.corp-index-page-contact .contact-info .rekl .skype a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 0px 0px 24px;
+    background-position: 1px 6px;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAcdJREFUeNp0kb+r+XEUxp+Pr1IUSpGIElKUQVGIySImZWOwyCJSsrllUAY2fwCb/AEmxSI2gxISBhJRJr/y+d7zvte9032t5zznnOc5HM/zGI1GfKPRwHQ6hclkgt1uh0gkgl6vh8FggE6ng0Ag4PANNxwO+Ww2i9vthr+IRqOIxWJQq9VMyKVSKf5z00+DVCqF2+2GQqHA4XBAr9djA61WKyqVClQqFfdPJpN9XK9XJqBTqODxeKBUKhEOh+H1ejEYDLBarfB8PuFyuT4E5OFNKBSCxWJBuVxGMplEsVikybDZbKzebrex3W4hINNvZrMZOI5DOp1GJBLB+XxGLpdDt9tl9dfrhcViASGl9KbT6bBCMBhEJpNhCfb7fdTrddZMrNdrCCnWNz6fD8fjkU2nmMkbie/3OwqFAuuhUIRGo5F+wDYEAgH4/X4kEgksl0vI5XLQH0n0Zjweg3s8Hny1WkWr1YLZbGbmJRIJTqcTtFot9vs9SqUS80vQII4mfRb4fD6PyWQCsVgMh8MBjUbDTqUfXi6Xn01Op/NLROx2O77ZbLKNf0HB1Gq1X9F3pPxms2F+KCUyTR7m8zn7Xzwep03cfwEGADXD00/B2UncAAAAAElFTkSuQmCC');
+}
+.corp-index-page-contact .contact-info .rekl .working {
+    padding: 2px 0px 2px 16px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #868686;
+}
+.corp-index-page-contact .contact-info .rekl .call {
+    display: block;
+    background: #71c737;
+    color: #fff;
+    max-width: 270px;
+    text-align: center;
+    margin: 5px 16px 0px 16px;
+    text-transform: uppercase;
+    padding: 8px 4px 8px 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+.corp-index-page-contact .contact-form .form {
+    position: relative;
+}
+.corp-index-page-contact .contact-form .form .inp {
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    margin-top: 16px;
+}
+.corp-index-page-contact .contact-form .form .inp input {
+    font-size: 16px;
+    padding: 9px 16px 8px 16px;
+    border: 0px;
+    width: 100%;
+}
+element.style {
+    margin: 0px;
+    width: 399px;
+    height: 117px;
+}
+.corp-index-page-contact .contact-form .form .inp textarea {
+    font-size: 16px;
+    padding: 9px 16px 8px 16px;
+    border: 0px;
+    width: 100%;
+    height: 240px;
+    resize: none;
+    display: block;
+}
+.corp-index-page-contact .contact-form .form .mess-count {
+    padding: 9px 0px 0px 0px;
+    text-align: right;
+    color: #b1b1b1;
+}
+.corp-index-page-contact .contact-form .form .privacy {
+    padding: 18px 3px 0px 0px;
+}
+.corp-index-page-contact .contact-form .form .b-save {
+    cursor: pointer;
+    opacity: .8;
+    color: #fff;
+    background: #004297;
+    font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;
+    border: 1px #004297 solid;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 42px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 2px;
+    margin-top: 40px;
+}
+
+/*question-find*/
+.corp-question-find {
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    margin-top: 40px;
+    padding: 20px 40px;
+}
+.corp-question-find .butts {
+    padding: 12px 0px 0px 0px;
+    height: 48px;
+}
+.corp-question-find .butts .butt {
+    float: left;
+    line-height: 36px;
+    border: 1px solid #EAEAEA;
+    text-decoration: none;
+    padding: 0px 24px;
+    color: #004297;
+    margin-right: 8px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+</style>	
+
+ <div class="corp-index-right">
+                                <? if (file_exists(__DIR__ . '/../menu-popular.php')) { ?>
+                                <div class="corp-index-right-popular">
+                                    <div class="tit">Популярное</div>
+                                    <? include(__DIR__ . '/../menu-popular.php'); ?>
+                                </div>
+                                <? } ?>
+   <div class="button-green"><a href="https://exkavator.ru/trade/companymanager/companymanager.html">ПЕРЕЙТИ В ЛИЧНЫЙ КАБИНЕТ</a></div>
+                                <div class="corp-bnr" style="height:400px;"></div>            
+                            </div>
+
+                            <div class="corp-index-data">
+                                
+                                <div class="corp-index-page-titul">
+                                    <h1>Спасибо за регистрацию!</h1>
+                                    <div class="txt">Ваш тарифный план — «Старт». Вы можете бесплатно размещать до трёх объявлений. Заполните профиль и получите дополнительные возможности нашей системы (это бесплатно). 
+</br>
+</br>
+Ваши объявления размещаются на общих основаниях и могут затеряться среди конкурентов. Если хотите повысить эффективность посмотрите наши тарифные планы:
+                                    </div>
+                                </div>
+                                </br>
+                                </br>
+                                <div class="corp-tarif-page">
+                                    <div class="tarif-tab">
+                                        
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <th style="background: #f7f7f7;">&nbsp;</th>
+<!--                                                <th class="mw"><div>Частный пользователь</div></th>-->
+                                                <th class="field tit"><div>Старт</div></th>
+                                                <th class="field tit"><div>Бизнес</div></th>
+                                                <th class="field tit"><div>Бизнес +</div></th>
+                                                <th class="field tit"><div>Ультра</div></th>
+                                                <th class="field tit" style="background: #f7c16c;"><div>Ультра +</div></th>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Специализация компании</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field yes">2</td>
+                                                <td class="field yes">5</td>
+                                                <td class="field yes">8</td>
+                                                <td class="field yes">8</td>
+                                                <td class="field up">10</td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Расширенный список контактных лиц (должность, ФИО, телефон, email)<span style="color:red;">*</span></div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Фотогалерея компании</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Статистика объявлений</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Видео в объявлениях</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Количество объявлений</div></td>
+<!--                                                <td class="field yes">5</td>-->
+                                                <td class="field yes">3</td>
+                                                <td class="field yes">50</td>
+                                                <td class="field yes">125</td>
+                                                <td class="field yes">250</td>
+                                                <td class="field up">1000</td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                              <td class="tit"><div>Количество PREMIUM-объявлений (выводятся приоритетно в списках разделов "Продажа" и "Аренда" с ленточкой "PREMIUM"). Сортировка по дате актуализации<span style="color:red;">***</span>. Также выводятся на главные страницы разделов (последние актуализированные) в блоке PREMIUM<span style="color:red;">**</span></div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field yes">2</td>
+                                                <td class="field yes">8</td>
+                                                <td class="field yes">15</td>
+                                                <td class="field up">15</td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Возможность покупки дополнительных PREMIUM-объявлений<span style="color:red;">***</span></div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Ручное поднятие объявлений</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field yes">2 раза в неделю*</td>
+                                                <td class="field yes">1 раз <br />в сутки</td>
+                                                <td class="field yes">2 раз <br />в сутки</td>
+                                                <td class="field yes">5 раз <br />в сутки</td>
+                                                <td class="field up">10 раз <br />в сутки</td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Наличие кнопки "Поднять все объявления"</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Автоматическое поднятие PREMIUM-объявлений</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field yes">2 раза <br />в неделю</td>
+                                                <td class="field up">2 раза <br />в сутки</td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Импорт/Экспорт - aвтоматическая загрузка и выгрузка объявлений</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Активная гиперссылка на сайт компании со страницы "О компании"</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Размещение файлов с подробной информацией о продукции, прайс-листов на странице компании (PDF, Excel, Word)</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Размещение пресс-релизов. Последние пресс-релизы публикуются в блоке "Новости компаний" раздела "Компании"</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Активная гиперссылка на сайт компании из раздела "Каталога компаний"</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Интерактивная информационная строка</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Приоритетное размещение компании в списках компаний с логотипом и ленточкой "BUSINESS", cортировка по алфавиту<span style="color:red;">****</span></div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field up cross-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Сверхприоритетное (выше компаний со статусом "BUSINESS") размещение компании в списках компаний с логотипом и ленточкой "ULTRA", cортировка по алфавиту<span style="color:red;">****</span></div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field yes check"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>Дополнительный вывод премиум-объявлений:</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field"></td>
+                                                <td class="field"></td>
+                                                <td class="field"></td>
+                                                <td class="field"></td>
+                                                <td class="field up"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>В отдельном блоке Торговой системы слева</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line">
+                                                <td class="tit"><div>В разделе "Прайс дня" на сайтах медиа группы "Экскаватор Ру"</div></td>
+<!--                                                <td class="field no cross"></td>-->
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field no cross"></td>
+                                                <td class="field up check-dark"></td>
+                                            </tr>
+                                            
+                                            <tr class="line-comm">
+                                                <td colspan="7">
+                                                    <div><span>*</span>Для частного лица будет указано одно контактное лицо, которое осуществляло первичную регистрацию.</div>
+                                                    <div><span>**</span>Дата актуализации объявления - это дата его размещения либо поднятия. Поднять объявление можно нажав значок "Поднять объявление" напротив конкретного объявления.</div>
+                                                    <div><span>***</span>На тарифных планах «Ультра» и «Ультра+» можно выкупить 3, 6 либо 9 дополнительных PREMIUM-объявлений. Стоимость дополнительных объявлений не входит в стоимость тарифа.</div>
+                                                    <div><span>****</span>Сортировка по алфавиту будет осуществляться среди прочих равных по статусу компаний (BUSINESS или ULTRA).</div>
+                                                </td>
+                                            </tr>
+                                            
+                                        </table>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                                <?
+                                if (file_exists(__DIR__ . '/../contact.php')) { include(__DIR__ . '/../contact.php'); }
+                                ?>
+                                
+                                
+                            </div>
+

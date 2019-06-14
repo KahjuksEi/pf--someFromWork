@@ -1,0 +1,103 @@
+@media only screen and (max-width: 992px) {
+.section-print2 {
+    margin: 0px 0px 0px -25px;
+}
+#x4{
+  margin: 50px 0px 0px 195px;
+}
+@media only screen and (max-width: 900px) {
+.section-print2 {
+    margin: 0px 0px 0px -70px;
+}
+#x4{
+  margin: 50px 0px 0px 180px;
+}
+@media only screen and (max-width: 820px) {
+.section-print2 {
+    margin: 0px 0px 0px -115px;
+}
+#x4{
+  margin: 50px 0px 0px 165px;
+}
+@media only screen and (max-width: 768px) {
+.section-print2 {
+    margin: 0px 0px 0px -140px;
+}
+#x4{
+  margin: 50px 0px 0px 160px;
+}
+@media only screen and (max-width: 679px) {
+    .section-print2 {
+    margin: 0px 0px 0px -190px;
+}
+#x4{
+  margin: 50px 0px 0px 350px;
+}
+    :root {
+        --header-font-size: 30px;
+        --header2-font-size: 26px;
+        --header3-font-size: 36px;
+        --header4-font-size: 40px;
+        --button-font-size: 16px;
+        --small-header-font-size: 20px;
+        --desc-font-size: 16px;
+        --curr-flex-direction: column;
+    }  
+    
+    body > div:nth-child(1) > div > div.header > a:nth-child(1) {
+        text-align: center;
+    }
+    body > div:nth-child(1) > div > div.header > a:nth-child(1) > span > img {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .section-1 > .lang a { right:0px; top:15px; }
+    .section-1 .body .buttons {
+        margin-top: 60px;
+    }
+    .section-1 .body .buttons a {
+        display: block;
+        width: max-content;
+        margin: 10px auto;
+    } 
+    .section-print a { display: block;
+        width: max-content;
+        margin: 10px auto; }
+    .section {
+        margin: 0 auto;
+    }
+    .section-2 .body > div:nth-child(3) {
+        margin: 25px 0;
+    }
+    .section-2 .body div.cols .col {
+        margin: 10px;
+    }
+    .section-2 .body div.cols .col:nth-child(2) {
+        padding: 0;
+    }
+    .section-3 .body .about > div:nth-child(2) {
+        padding: 0;
+    }
+    .section-3 .body .about > div {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+.section-print2 {
+    margin: 0px 0px 0px -200px;
+}
+#x4{
+  margin: 50px 0px 0px 290px;
+}
+.section-1 > .lang { height:auto; padding:0px 0px 10px 0px; }
+.section-1 > .lang a { right:auto; margin:0px auto; position:static; }
+}
+@media only screen and (max-width: 480px) {
+.section-print2 {
+    margin: 0px 0px 0px -285px;
+}
+#x4{
+  margin: 50px 0px 0px 255px;
+}

@@ -1,0 +1,143 @@
+/* normal */
+@font-face {
+    font-family: 'exkavatorru';
+    src: url('_fonts/exkavatorru.eot');
+    src: url('_fonts/exkavatorru.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru.woff?v9') format('woff'),
+         url('_fonts/exkavatorru.ttf') format('truetype'),
+         url('_fonts/exkavatorru.svg#exkavatorru') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* italic */
+/*@font-face {
+    font-family: 'exkavatorruitalic';
+    src: url('_fonts/exkavatorru-italic.eot');
+    src: url('_fonts/exkavatorru-italic.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-italic.woff') format('woff'),
+         url('_fonts/exkavatorru-italic.ttf') format('truetype'),
+         url('_fonts/exkavatorru-italic.svg#exkavatorruitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* medium */
+@font-face {
+    font-family: 'exkavatorrumedium';
+    src: url('_fonts/exkavatorru-medium.eot');
+    src: url('_fonts/exkavatorru-medium.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-medium.woff?v9') format('woff'),
+         url('_fonts/exkavatorru-medium.ttf') format('truetype'),
+         url('_fonts/exkavatorru-medium.svg#exkavatorrumedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* bold */
+/*@font-face {
+    font-family: 'exkavatorrubold';
+    src: url('_fonts/exkavatorru-bold.eot');
+    src: url('_fonts/exkavatorru-bold.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-bold.woff') format('woff'),
+         url('_fonts/exkavatorru-bold.ttf') format('truetype'),
+         url('_fonts/exkavatorru-bold.svg#exkavatorrubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* bold italic */
+/*@font-face {
+    font-family: 'exkavatorrubold_italic';
+    src: url('_fonts/exkavatorru-bolditalic.eot');
+    src: url('_fonts/exkavatorru-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-bolditalic.woff') format('woff'),
+         url('_fonts/exkavatorru-bolditalic.ttf') format('truetype'),
+         url('_fonts/exkavatorru-bolditalic.svg#exkavatorrubold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* black */
+/*@font-face {
+    font-family: 'exkavatorrublack';
+    src: url('_fonts/exkavatorru-black.eot');
+    src: url('_fonts/exkavatorru-black.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-black.woff') format('woff'),
+         url('_fonts/exkavatorru-black.ttf') format('truetype'),
+         url('_fonts/exkavatorru-black.svg#exkavatorrublack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* black italic */
+/*@font-face {
+    font-family: 'exkavatorrublack_italic';
+    src: url('_fonts/exkavatorru-blackitalic.eot');
+    src: url('_fonts/exkavatorru-blackitalic.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-blackitalic.woff') format('woff'),
+         url('_fonts/exkavatorru-blackitalic.ttf') format('truetype'),
+         url('_fonts/exkavatorru-blackitalic.svg#exkavatorrublack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* light */
+/*@font-face {
+    font-family: 'exkavatorrulight';
+    src: url('_fonts/exkavatorru-light.eot');
+    src: url('_fonts/exkavatorru-light.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-light.woff') format('woff'),
+         url('_fonts/exkavatorru-light.ttf') format('truetype'),
+         url('_fonts/exkavatorru-light.svg#exkavatorrulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* light italic */
+/*@font-face {
+    font-family: 'exkavatorrulight_italic';
+    src: url('_fonts/exkavatorru-lightitalic.eot');
+    src: url('_fonts/exkavatorru-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-lightitalic.woff') format('woff'),
+         url('_fonts/exkavatorru-lightitalic.ttf') format('truetype'),
+         url('_fonts/exkavatorru-lightitalic.svg#exkavatorrulight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* thin */
+/*@font-face {
+    font-family: 'exkavatorruthin';
+    src: url('_fonts/exkavatorru-thin.eot');
+    src: url('_fonts/exkavatorru-thin.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-thin.woff') format('woff'),
+         url('_fonts/exkavatorru-thin.ttf') format('truetype'),
+         url('_fonts/exkavatorru-thin.svg#exkavatorruthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* thin italic */
+/*@font-face {
+    font-family: 'exkavatorruthin_italic';
+    src: url('_fonts/exkavatorru-thinitalic.eot');
+    src: url('_fonts/exkavatorru-thinitalic.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-thinitalic.woff') format('woff'),
+         url('_fonts/exkavatorru-thinitalic.ttf') format('truetype'),
+         url('_fonts/exkavatorru-thinitalic.svg#exkavatorruthin_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ultralight */
+/*@font-face {
+    font-family: 'exkavatorruultralight';
+    src: url('_fonts/exkavatorru-ultralight.eot');
+    src: url('_fonts/exkavatorru-ultralight.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-ultralight.woff') format('woff'),
+         url('_fonts/exkavatorru-ultralight.ttf') format('truetype'),
+         url('_fonts/exkavatorru-ultralight.svg#exkavatorruultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ultralight italic */
+/*@font-face {
+    font-family: 'exkavatorruultralight_italic';
+    src: url('_fonts/exkavatorru-ultralightitalic.eot');
+    src: url('_fonts/exkavatorru-ultralightitalic.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/exkavatorru-ultralightitalic.woff') format('woff'),
+         url('_fonts/exkavatorru-ultralightitalic.ttf') format('truetype'),
+         url('_fonts/exkavatorru-ultralightitalic.svg#exkavatorruultraLtIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

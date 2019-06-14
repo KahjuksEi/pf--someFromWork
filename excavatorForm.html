@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	*{margin: 0 auto;}
+	.main-block{
+		width: 820px;
+		height: 400px;
+		padding: 30px;
+		background-color: #f1f1f1;
+		font-family: "HelveticaNeueCyr"; 
+	}
+	.main-block-title{
+    	
+    	font-size: 24px; 
+    	padding-bottom: 20px;
+	}
+	.main-block-fields-item{
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-box-orient: horizontal;
+    	-webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    	-webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    	padding: 20px 0px 0px 0px;
+	}
+	.main-block-fields-item-title{
+	    font-weight: normal;
+        font-size: 16px;
+	}
+	.main-block-fields-item input{
+		float: right;
+		width: 100%;
+		height: 40px;
+		border: 1px solid #c6c6c7;
+		font-size: 20px;
+	}
+	.i1{
+		width: 100%;
+		padding-left: 80px;
+	}
+	.i2{
+		width: 100%;
+		padding-left: 92px;
+	}
+	.i3{
+		width: 100%;
+		padding-left: 110px;
+	}
+	.main-block-button{
+		width: 230px;
+		height: 40px;
+		background-color: #044793;
+		color: #ffffff;
+		text-align: center;
+		line-height: 40px;
+		border-radius: 2px;
+		border: none;
+		cursor: pointer;
+		margin:20px 20px 20px 151px;
+		font-weight: bold;
+      	font-size: 12px;
+	}
+	.main-block-mark{
+		margin-left: 151px;
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 20px;
+	}
+  .main-block span{
+  		color: red;
+  }
+
+  @media screen and (max-width: 880px) {
+  	.main-block{
+		width: 90%;
+	}
+  }
+
+  @media screen and (max-width: 411px) {
+  	.main-block{
+		width: 100%;
+		height: 450px;
+		padding: 0px;
+	}
+	.main-block-title{
+		padding-left: 18px;
+		padding-top: 18px;
+	}
+  	.main-block-fields-item{
+  		flex-direction: column;
+  		padding: 0px 0px 10px 0px;
+  	}
+  	  
+  	.i1{
+  		width: 90%;
+		margin: 5px 100px 0px 22px;	
+	}
+	.i2{
+		width: 90%;
+		margin: 5px 100px 0px 13px;
+	}
+	.i3{
+		width: 90%;
+		margin: 5px 100px 0px -3px;
+	}
+	.main-block-button{
+		width: 91%;
+        margin: 20px 0px 10px 18px;
+	}
+	.main-block-mark{
+		margin-left: 20px;
+		font-size: 8px;
+		line-height: 10px;
+	}
+	.t1{margin-left: 18px;}
+	.t2{margin-left: 18px;}
+	.t3{margin-left: 18px;}
+  }
+  @media screen and (max-width: 320px) {
+  	.main-block-button{
+		width: 91%;
+        margin: 20px 0px 10px 15px;
+  }
+  	
+}
+</style>
+<body>
+	<div class="main-block">
+		<div class="main-block-title">Узнать больше о новых экскаваторах CASE</div>
+		<div class="main-block-fields">
+			<div class="main-block-fields-item">
+				<div class="main-block-fields-item-title t1">Компания</div>
+				<div class="i1"><input type="text"></div>
+			</div>
+			<div class="main-block-fields-item">
+				<div class="main-block-fields-item-title t2">Телефон</div>
+				<div class="i2"><input type="tel"></div>
+			</div>
+			<div class="main-block-fields-item">
+				<div class="main-block-fields-item-title t3">Email<span>*</span></div>
+				<div class="i3"><input type="email"></div>
+			</div>
+		</div>
+		<button class="main-block-button">ОТПРАВИТЬ</button>
+		<div class="main-block-mark">НАЖИМАЯ НА "ОТПРАВИТЬ", ВЫ ДАЁТЕ СОГЛАСИЕ НА СБОР И ОБРАБОТКУ ВАШИХ ПЕРСОНАЛЬНЫХ ДАННЫХ<br>
+		<span>*</span> — ОБЯЗАТЕЛЬНОЕ ДЛЯ ЗАПОЛНЕНИЯ ПОЛЕ</div>
+	</div>
+</body>
+</html>
+
+
