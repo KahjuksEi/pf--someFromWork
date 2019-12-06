@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+</head>
+<body>
+	<style type="text/css">
+		.forum-modal{width: 200px;height: 380px;font-family: 'exkavatorru', Helvetica, Arial, sans-serif;font-size: 12px;}
+		.forum-modal-title1{padding:10px;background-color: #003884;text-transform: uppercase;font-weight: bold;font-size: 12px;color: #fff;}
+		.forum-modal-title2{font-weight: bold;padding:13px 10px 11px 10px;}
+		.forum-modal input,textarea{width: 160px;margin: 0px 10px 10px 10px;padding:10px;border: 1px solid #bdbdbd;}
+   	.forum-modal textarea{height: 70px;color:#bdbdbd;font-family: inherit;}
+		.forum-modal-button{text-transform: uppercase;color: #fff;background-color: #5bab05;width: 182px;height: 40px;margin: 0px 10px 10px 10px;border:0px;}
+		.forum-modal-button:hover{background-color: #408d02;}
+		.forum-modal-result{text-align: center;min-height: 0px!important;}
+		.forum-modal .txt { margin:0px 320px 0px 40px; padding:20px 0px 26px 0px; font-size:18px; color:#000;}
+    .forum-modal .txt .tit { font-size:30px; font-family: 'exkavatorrumedium', Helvetica, Arial, sans-serif;}
+	</style>
+
+	<div class="forum-modal">
+		<div class="forum-modal-title1">
+			быстро найти технику или исполнителя!
+		</div>
+		<div class="forum-modal-title2">
+			Разместите заявку на технику, сервис или услуги
+		</div>
+			<input class="your-name-input" type="text" name="Person" placeholder="Ваше имя" autocomplete="name" onfocus="this.placeholder=''" onblur="this.placeholder='Ваше имя'"data-reqfield=".forum-modal .your-name-input">
+
+			<input class="your-phone-input" type="text" name="Phone" type="tel" placeholder="Ваш телефон" autocomplete="tel" onfocus="this.placeholder=''" onblur="this.placeholder='Ваш телефон'" data-reqfield=".forum-modal .your-phone-input">
+
+			<input name="Email" type="email" placeholder="Ваш Email" autocapitalize="off"  autocomplete="email"  onfocus="this.placeholder=''" onblur="this.placeholder='Ваш Email'">
+
+			<textarea name="Body" placeholder="Опишите вашу заявку (вам необходим ремонт, услуги спецтехники, аренда или покупка)" onfocus="this.placeholder='';this.style.color='#000'"
+        onblur="this.placeholder='Опишите вашу заявку (вам необходим ремонт, услуги спецтехники, аренда или покупка)'"></textarea> 
+
+      <!--  <textarea name="Body" placeholder="Опишите вашу заявку (вам необходим ремонт, услуги спецтехники, аренда или покупка)"></textarea> -->
+
+			<button type="submit" class="forum-modal-button" onclick="SendExchangeMessage()">отправить заявку</button>
+
+			<div class="forum-modal-result" style="display: none;"> 
+        <div class="txt"> 
+          <div class="tit">Ваша заявка отправлена.</div> 
+        </div>
+      </div>
+	</div>
+
+	<script>
+    function SendExchangeMessage()
+    {
+        var result=true;
+        var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,10}\.)?[a-z]{2,10}$/i;
+        $('.must-completed').removeClass('must-completed');
+        if(!pattern.test($('.forum-modal input[name=Email]').val()))
+          { 
+              $('.forum-modal input[name=Email]').addClass('must-completed');
+              result = false;
+          }
+
+        $('.forum-modal [data-reqfield]').each(function() 
+         {
+          if(($(this).val()=='')&&($(this).is(':checked')===false)) 
+            {
+             sel = $(this).data('reqfield');
+             $(sel).addClass('must-completed');
+             result = false;
+             return false;
+            }
+         });
+        if(result===true)
+        {
+            $('.forum-modal').hide();
+            $('.forum-modal-result').show();                                        
+            $.ajax({
+                type: 'POST',
+                url: 'https://exkavator.ru/exchange/send-moderate-exch.html',
+                data: {'Person':$('.forum-modal input[name="Person"]').val(),'Phone':$('.forum-modal input[name="Phone"]').val(),'Email':$('.forum-modal input[name="Email"]').val(),'Body':$('.forum-modal textarea[name="Body"]').val(),'ZoneType':'forumMainPage'},     
+                dataType : "json",
+                success: function (data, textStatus) 
+                 {
+                 }
+            });                                        
+
+         }
+            return false;
+    }            
+  </script>
+</body>
+</html>
