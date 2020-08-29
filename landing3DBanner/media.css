@@ -23,6 +23,9 @@
 .section-print2 {
     margin: 0px 0px 0px -140px;
 }
+    .section-2 .body div.cols{
+        flex-direction: column;
+    }
 #x4{
   margin: 50px 0px 0px 160px;
 }
