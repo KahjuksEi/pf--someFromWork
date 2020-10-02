@@ -1,0 +1,91 @@
+<div class="systemSellingBlock">
+  <div class="systemSellingBlock__cont">
+    <h2>Технология комплексного продвижения для продажи и аренды <a class="typewrite" data-period="2000" data-type='["спецтехники", "комтранспорта", "навески и запчастей"]'>
+      <span class="wrap"></span>
+      </a>
+    </h2>
+    <div class="systemSellingBlock__blocks">
+      <div class="systemSellingBlock__block">
+        <p class="systemSellingBlock__text">Эффективность доказана на <b>6 492 компаниях</b>, которые уже получают клиентов!</p>
+        <form class="systemSellingBlock__form">
+          <input type="email" name="email" placeholder="Ваш Email">
+          <input type="text" name="phone" placeholder="Ваш телефон">
+          <input class="systemSellingBlock__butt" type="submit" value="УЗНАТЬ ПОДРОБНОСТИ">
+        </form>
+      </div>
+      <div class="systemSellingBlock__block">
+        <img src="https://exkavator.ru/_templates/images/_main2017/12015-devices.png" alt="devices">
+      </div>
+    </div>  
+    <a href="#" class="systemSellingBlock__readMore">
+      <p>Читать далее</p>
+      <div class="readMore__arr"></div>
+    </a>
+  </div>
+</div>
+<style>
+  body{margin:0 auto;}
+  .systemSellingBlock{padding:0px 0px 90px 0px;
+  background:url('https://exkavator.ru/_templates/images/_main2017/12015-lay1.png') 30% 30% no-repeat,
+  url('https://exkavator.ru/_templates/images/_main2017/12015-lay2.png') 0px 0px no-repeat;}
+  .systemSellingBlock__blocks{display: flex;padding: 0px 20px;}
+  .systemSellingBlock__block{width: 50%;padding-top: 25px;}
+  .systemSellingBlock__block:nth-of-type(1){padding-top: 82px;}
+  .systemSellingBlock__block:nth-of-type(2){display: flex;align-items: center;padding-left: 80px;}
+  .systemSellingBlock__cont{max-width:1280px;margin:0 auto;color:#fff !important;}
+  .systemSellingBlock__cont h2{font-size: 48px;padding: 0px 20px;color:#fff !important;letter-spacing: -0.7px;
+line-height: 64px;}
+.systemSellingBlock__cont h2 a{color: #ffd348 !important;}
+.systemSellingBlock__cont a{text-decoration: none;}
+.systemSellingBlock__text{font-size: 38px;max-width: 550px;line-height: 46px;}
+.systemSellingBlock__form{display: flex;flex-wrap: wrap;justify-content: space-between;padding-top: 24px;
+max-width: 535px;}
+.systemSellingBlock input{width: 49%;height: 45px;border: 0px;padding: 0;border-radius: 5px;padding-left:20px;
+  color: #b7b7b7;font-size: 12.6px;}
+  .systemSellingBlock input[type="submit"]{width: 100% ;background: #ffd348;color: #000;margin-top: 18px;
+  font-size: 10px;font-weight: bold;}
+  .systemSellingBlock__readMore{display:block;margin-top: 50px;font-size: 16px;text-align: center;color: #333 !important;}
+  .readMore__arr{background-image: url('https://exkavator.ru/_templates/images/_main2017/12015-arr.png');
+  width: 42px;height: 42px;background-size: cover;margin:-15px auto 0px;transform: rotate(90deg);}
+  @media(max-width: 1440px){
+    .systemSellingBlock__block img{width: 100%;margin-top: 100px;}
+}
+@media(max-width: 768px){
+    .systemSellingBlock__blocks {flex-direction: column;align-items: center;}
+    .systemSellingBlock__block {padding: 0;}
+}
+</style>
+
+<script type="text/javascript">
+var TxtType = function(el, toRotate, period){this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      /*в parseint длина паузы стирания*/
+      this.period = parseInt(period, 7) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;};
+
+  TxtType.prototype.tick = function(){var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting){this.txt = fullTxt.substring(0, this.txt.length - 1);}else{this.txt = fullTxt.substring(0, this.txt.length + 1);}this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      /* var delta = 200 - Math.random() * 100;*/
+      /*ускоряем скорость печати*/
+      var delta = 100;
+      if (this.isDeleting){delta /= 2;}if (!this.isDeleting && this.txt === fullTxt){delta = this.period;
+      this.isDeleting = true;}else if (this.isDeleting && this.txt === ''){this.isDeleting = false;
+      this.loopNum++;
+      /*скорость печати нового слова*/
+      delta = 100;}setTimeout(function(){that.tick();}, delta);};
+
+  window.onload = function(){var elements = document.getElementsByClassName('typewrite');
+      for (var i=0; i<elements.length; i++){var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate){new TxtType(elements[i], JSON.parse(toRotate), period);}}var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap{border-right: 0.05em solid #ffd348; padding-right:10px;}";
+      document.body.appendChild(css);};
+</script>
