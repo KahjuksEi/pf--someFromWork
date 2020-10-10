@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnglishPage</title>
+</head>
+<style>
+body {font-family: regular-ysans,sans-serif;font-size: 14px;}
+h2{text-align: center;}
+header{display: flex;}
+.container{max-width: 960px;margin: 0 auto;}
+.tab {overflow: hidden;border: 1px solid #ccc;background-color: #f1f1f1;}
+.tab button { float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;transition: 0.3s;font-size: 16px;}
+.tab button:hover {background-color: #ddd;}
+.tab button.active {background-color: #ccc;}
+.tabcontent {display: none;padding: 6px 12px;border: 1px solid #ccc;border-top: none;}
+.phrases-wrap{display: flex;}
+.phrases-cont{width: 50%;}
+.delimiter{background: gainsboro;width: 1px;margin: 12px;}
+.col2{columns: 2;column-rule: solid 1px gainsboro;}
+</style>
+</head>
+<body>
+  <div class="container"> 
+  <h2>My english cheatsheet</h2>
+  <header>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Tenses')">Tenses</button>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Gramm')">Gramm</button>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Phrases')">Phrases</button>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Speech')">Speech</button>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Biz')">Biz</button>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Prov')">Proverbs</button>
+    </div>
+  </header>
+  </div>
+<div class="container"> 
+  <div id="Tenses" class="tabcontent">
+    <h3>Present Simple</h3>
+    <p>Используется, когда вы хотите:
+      рассказать о том, что вы делаете постоянно, каждый день (неделю и т.д.), 
+      то есть о тех действиях, которые стали для вас привычными,
+      рассказать о явлениях природы, неопровержимых истинах, фактах,
+      Вы говорите о каком-то действии "в общем", не подразумевая какой-либо период времени. 
+      Неважно, когда происходит действие относительно момента речи.
+      (usually,often,sometimes,always,every day)</p>
+      <h4>Present Simple Passive</h4>
+      <p>The picture is finished (глаголом с -ed)</p>
+    <hr>
+    <h3>Past Simple</h3>
+    <p>Past Simple для выражения событий. которые произошли и закончились в прошлом
+      отрицание строится с did'nt и у глагола-действия исчезает -ed,
+       типа I did'nt like the film мне не понравился фильм
+      вопрос ставится при помощи did, окончание также исчезает
+      (yesterday,last week)</p>
+    <hr>    
+    <h3>Future Simple</h3>
+    <p>Future Simple действие которое будет совершаться в будущем
+      I will see you next week.</p>   
+    <hr> 
+    <h3>Present continuous</h3>
+    <p>Present continuous употребляется когда надо рассказать что ты делаешь в настоящий момент, 
+      We are landing in Heathrow now (Мы сейчас приземляемся в Хитроу).
+      (now, at the moment, right now, on the week)</p>
+    <h4>Present Continuous Passive</h4>
+    <p>Present Continuous Passive когда речь идет о действиях, которые продолжаются в тот момент, когда о них говорят
+      A new project is being discussed now новый проект обсуждается щас</p> 
+    <hr>
+    <h3>Past continuous</h3>
+    <p>Past continuous описывает события, которые происходили в какой то момент в прошлом, 
+      I was reading all day yesterday (Я читал вчера весь день).
+       Часто сочетается с past simple (Jane phoned me while I was having lanch)</p> 
+    <h4>Past Continuous Passive</h4>    
+    <p>Past Continuous Passive когда речь идет о длительных действиях в прошлом
+      The room was being cleaned when I was arrived Когда я приехал, в комнате как раз убрали
+      Are U being forced to go there? тебя заставляют пойти туда?
+      Wasthis being done out of respect? это было сделано из уважения?</p>   
+    <hr>
+    <h3>Future continious</h3>
+    <p>Future continious описывает действия, которые будут происходить в указанный момент в будущем, часто встречается в простых диалогах,
+       Tonight at 7 pm, I will be flying to Paris (Сегодня в 7 часов вечера я буду лететь в Париж).
+      (tomorow, next year, in two days)</p>  
+    <hr>
+    <h3>Past Perfect</h3>
+    <p>Past Perfect употребляется когда мы говорим о действии, которое случилось раньше другого действия в прошлом.
+       Когда действие закончено а результат важен щас James had studied English before he moved to London 
+       (Джеймс изучал английский до того, как переехал в Лондон).</p>   
+    <h4>Past Perfect Passive</h4>   
+    <p>Past Perfect Passive когда нам важен результат действия, произошедшего в прошлом, часто до какого то другого события, акцент делается на сам результат а не на исполнителе, субъект совершивший его может быть очевиден, неважен или неизвестен.
+      The parcel had'nt been delivered when they came to the post office посылка не была доставлена. когда они пришли на почту
+      Had the bank been robbed before someone called the police? Банк был ограблен до того, как кто то позвонил в полицию?</p>   
+    <hr>
+    <h3>Present Perfect</h3>
+    <p>Present Perfect употребляется для выражения действия, которое уже завершилось(есть результат), 
+      но промежуток времени еще не закончился,I have just seen her (Я только что видел ее).
+      We have not done anything  Мы не делали ничего (just, already, yet, recently, so far)</p>   
+    <hr>
+    <h3>Future Perfect</h3>
+    <p>Future Perfect когда нужно описать действие, которое закончится к определенному моменту времени, для него характерны by next week, by then, by saturday, может выражаться через before/when + present simple типа before she comes (прежде чем он придет)
+      How will we have reached the city by noon? (Как попадем в город к полудню?)</p>  
+    <h4>Future Perfect Passive</h4>  
+    <p>Future Perfect Passive когда нужно описать действие, которое закончится к определенному моменту времени в будущем, показывает что для говорящего результат действия важнее исполнителя. Исполнитель часто не упоминается в предложении, может быть очевиден, неважен или неизвестен.
+      Для него характерны by next week, by then, by monday, before/when, before she comes, when she returns (когда она ВЕРНЕТСЯ)
+      Will the parcel have been delivered by four pm? посылку доставят к 4 дня?
+      By what time will the pizza have been delivered? к какому времени пицца будет доставлена?</p>
+    <hr>
+  </div>
+
+  <div id="Gramm" class="tabcontent">
+    <h3>Conditional clauses (Условные предложения)</h3>
+    <p>когда мы говорим о реальных событиях будущего времени, которые произойдут,
+       если будут выполнены определенные условия.</p>
+    <p>
+      <b>Первый тип</b> 
+      If никогда не употр с future simple
+      if + present saimple = условие
+      future simple = результат
+      If I see him tonight, I will tell him the truth.
+      </p>
+      <p>
+        <b>Второй тип</b> 
+        if + past simple (did/were/found) = возможное условие
+        future in the past (would + гл без to) = возм результат
+        What would you do if you won a million?
+        If I were in danger, he would save me.
+        IF не употребляется с would в речи</p>
+      <p>
+        <b>Третий тип</b> 
+        Отношение к нереальным действиям, нереальное условие относится к прошедшему времени и не подлежит выполнению.Действие не происходит никогда!
+        if + past perfect = нереальное условие
+        future perfect in the past = нереальный результат 
+        If I would known about your decease, I would have visited you at the hospital.
+      </p>
+      <p><b>Future in the past</b>, это время описывает прошедшие события, относящиеся к будущему, распространено в разговорной речи,
+        I knew you would help him ( я знал что ты ему поможешь). I thought it would be easier</p>
+     <p><b>There is/are</b> юзается когда нужно сказать что какой-то чел или предмет в каком то месте,
+       there are many secrets in the world</p>
+     <p>personal pronouns - личные местоимения (I, we, he)<br>
+       possesive pronouns - притяж местоимения (my, mine, your, our)</p>
+     <p><b>Imprative mood</b> - повелительное наклонение, когда глагол без to, типа Stop talking!</p>
+     <p><b>General question</b> - задается под получение да\нет, типа Aren`t you ready?</p>
+     <p><b>Wh-question</b> - вопрос начинается с вопросительного слова, для получения уточняющей инфы
+       Who knows the answers?
+       </p>
+     <p>Comparative degree of adjectives - сравнит. степень прилагательных Stronger than U<br>
+       Superlative degree of adjectives - превосх. степень прилагательных The tallest man.</p>
+     <p><b>Order of adjectives - порядок прилагательных</b><br>
+       1 ваше мнение об объекте (ugly,nice)<br>
+       2 размер<br>
+       3 возраст<br>
+       4 форма<br>
+       5 цвет<br>
+       6 происхождение, национальность<br>
+       7 материал<br>
+       8 предназначение</p>
+       <p><b>Indefinite pronouns</b> - обобщающие местоимения (all,both,either,another..)<br>
+         IT - identify, THIS - introduce. 
+         It is a phone. This is my phone.</p>
+       <p><b>Indirect speech (косвенная речь)</b> 
+         Для перевода из прямой в косвенную<br> 
+         1 личные местоимения могут меняться Anna says "I like it"=Anna says that she likes it<br>
+         2 если глагол перед прямой речью в наст. времени, то он не меняет времени. 
+         John says "It was nice" = John says that it was nice.<br>
+         3 Если глагол перед прямой речью в прош. времени, то он делает шаг назад по времени. 
+         John said: "It was nice" = John said it had been nice.
+         4 меняются указатели ago=before this=that here=there now</p>
+       <p><b>Modal perfect forms</b><br>  
+         В зависимости от значения модального глагола комментируют ситуации прошлого need'nt+have+глагол 3формы\глаголed
+         should+have+глагол 3формы\глаголed<br>
+         You neeed'nt have bought the flowers не надо было покупать цветы</p>
+         <p>исчисляемые - колво в many and few<br>
+           неисчисляемые -колво в a lot of and a little. - a salt, a water, a glass,a fire, чувства, науки, хобби</p>
+         <p>Make of строят, делают. Make walls of stone.<br>
+           Make from жаркой, варкой. We make cheese from milk.</p>
+           <p>
+           <b>Must</b><br>
+           He must to see them<br> 
+           маст особый глагол без окончаний -s и частицы to<br>
+           во временах:<br>
+           наст. must; have to<br>
+           прош. had to<br>
+           буд. will have to<br>
+           буд из прш. would have to<br>
+           Does she like fruit. 
+           Когда в предложении есть does то добавлять окончание -s  к основному глаголу не нужно.
+         </p>
+         <p>Must для выражения долга в настоящем времени <br>
+           have to необходимость обусловленная внешними обстоятельствами <br>
+           May 75% уверенность, might - 50%, глаголы вероятности <br>
+           Shall необходимость совершения действия в форме приказа или твердого обещания <br>
+           should необх совершения в силу чьего-либо мнения. You should pay bills. <br>
+           Will твердая решимость, желание, намерение <br>
+           Would дополнительное вероятностное значение, ('d rather пожалуй, 'd better лучше)</p>
+         <p>alredy уже в утверждениях, 
+           yet уже в отрицаниях, вопросах.</p>
+         <p><b>Страдательный залог</b> они нашли + найден = был найден<br>
+           They found the paper + The paper is found = 
+           This paper has been found </p>
+         <p><b>Отрицание с неправильными глаголами</b> строится при помощи did`nt, при этом у глагола-действия исчезает "неправильная" форма.
+           Вопрос ставится при помощи did который ставим ПЕРЕД действующим лицом, неправильная форма также исчезает.<br>
+           I saw the film. I did'nt saw the film. Я смотрел фильм. Я не смотрел филм.<br>
+           Did you see the film? Ты смотрел фильм?</p>
+         <p>вместо инфинитива <b>герундий</b> 
+           Stop asking him  перестань спрашивать его.
+           Keep checking them продолжай проверять их</p>
+           <p><b>Пассивные конструкции</b> используются когда не важно кто действует либо действие направлено на подлежащее. 
+             Образуется to be (в нужном времени) +глагол+ed(если правильный) или глагол в 3й форме (если неправильный).<br>
+             I'm told мне говорят<br>
+             He is told ей говорят<br>
+             I was told мне говорили<br>
+             I will be told мне скажут</p>
+           <p> Be <b>used to</b> + существительное, глагол + ing означают иметь привычку, get used to + существительное, глагол + ing означает привыкать.
+             I used to catch the train to travel to Berlin. Я раньше путешествовал в берлин на поезде.<br>
+             I am used to travelling light. Я привык путешествовать налегке.<br>
+             I am getting used to working in the office. Привыкаю работать в офисе.</p>
+           <p>Прилагательные с окончанием ing описывают качества, свойства и характеристики предмета или человека,
+              прилагательные на ed указывают на чувства, эмоции или состояние человека. A boring film. A bored boy.</p>
+  </div>
+
+  <div id="Speech" class="tabcontent">
+    <h3>Восхитительные прилагательные</h3>
+    <p class="col2">Breathtaking - захватывающий дух <br>
+      fascinating - увлекательный <br>
+      hilarious - смешной <br>
+      fabulous - великолепный <br>
+      brilliant, gorgeous, magnificient, stunning, terrific <br>
+      moving/touching - трогательный <br>
+      thought-provoking - наводящий на размышления <br>
+      thrilling - волнующий</p>
+      <hr>
+      <h3>Linking words (parenthesises)</h3>
+      <p class="col2">on the other hand - наоборот <br>
+        however - однако <br>
+        consequently - следовательно <br>
+        although - тем не менее <br>
+        instead of - вместо этого <br>
+        once - как только, раз <br>
+        in fact - фактически <br>
+        after all - в конце концов <br>
+        unless - если не <br>
+        on the contrary - наоборот</p>
+        <hr>
+        <p>введение темы - to begin with, firstly, first of all <br>
+          отношение говорящего - unfortunately, as a rule, sadly, of course <br>
+          следствие - therefore, that is why, thus, as a result <br>
+          дополнение - additionally, moreover, also, furthermore <br>
+          повторение - again, in other words,that is <br>
+          источник - сообщения they say, according to <br>
+          уступка - although, even though, while <br>
+          призыв к собеседнику - look here, listen, you know <br>
+          заключение - thus, finally, in the end, in short, eventually</p>
+  </div>
+
+  <div id="Biz" class="tabcontent">
+        <h3>Для построения последовательных и логически связных предложений</h3>
+      <p class="col2">
+        That’s about it — в принципе и все  <br> 
+        I’d say — я бы сказал/а <br> 
+        For me personally — как по мне лично (вместо фразы as for me) <br> 
+        In a way — в каком-то плане <br> 
+        It’s a bit of both — и то и то/нечто среднее <br> 
+        Let me see — дайте подумать <br> 
+        Quite — it was quite difficult (довольно) <br> 
+        A bit — I found it a bit confusing (немного)  <br> 
+        Rather — The process is rather quick (довольно таки) <br> 
+        Fairly — It’s fairly complicated (довольно таки) <br> 
+        In fact — на самом деле, более того (для добавления важной информации) <br> 
+        Eventually — в конечном счете, в конце концов <br> 
+        Fortunately — к счастью <br> 
+        Unfortunately — к сожалению <br> 
+        Hopefully — будем надеяться (надеюсь) <br> 
+        On the flip slide — с другой стороны <br> 
+        Come to think of it — если подумать/задуматься <br> 
+        Basically — в общем <br> 
+        On the fly — на ходу  <br> 
+        Go with (an idea) — выбрать / развивать дальше (какую-то идею)  <br> 
+        Surely enough — конечно же, естественно <br> 
+        Still (nonetheless) — тем не менее, так или иначе <br> 
+        However — однако</p>
+        <h3>Наиболее популярные обороты в деловом общении</h3>
+        <p class="col2">professional development — профессиональное развитие <br>
+          extensive experience — обширный опыт <br>
+          to assist with — помогать с <br>
+          to collaborate with — сотрудничать с <br>
+          to be adept at doing smth — быть экспертом в чл <br>
+          problem-solving решение — задач <br>
+          to track metrics — отслеж показатели <br>
+          statistical summaries — статистические сводки <br>
+          efficiency — эффективность <br>
+          to do some research — проводить исследование <br>
+          to apply for a job — откликнуться на вакансию <br>
+          to rehearse an interview — репетировать интервью <br>
+          to prepare a list of questions — подготовить список вопросов <br>
+          to build trust with — строить доверительные отношения с <br>
+          bullet points — ключевые пункты <br>
+          email chain — переписка <br>
+          yours faithfully — искренне ваш (если адресат неизвестен) <br>
+          yours sincerelly — искренне ваш (если адресат известен) <br>
+          last but not list — последний но не менее важный <br>
+          cubicle — рабочее место <br>
+          reasonable prices — разумные цены <br>
+          to go over smth — изучать чл <br>
+          I would like to make some input — я бы хотел сделать вклад <br>
+          to make suggestions — предлагать что то <br>
+          keen insights — глубокое понимание <br>
+          to outline strategies — описать стратегии <br>
+          ways of improving — способы улучшения <br>
+          how do you feel about OOP? — как вы относитесь к ООП? <br>
+          particular needs — особые нужды <br>
+          to discuss smth in more details — обсудить чл детально <br>
+          to pitch — продвигать (товар\идею) <br>
+          to provide clarity — обеспечивать ясность <br>
+          creative juices — творческие идеи <br>
+          to benefit — извлекать пользу <br>
+          to make it memorable — сделать это незабываемым <br>
+          inundated — переполненный <br>
+          aptitude — способность <br>
+          to gain traction — набирать обороты <br>
+          Hard-working — трудолюбивый <br>
+          Compromising — идущий на компромисс <br>
+          Diligent — старательный <br>
+          Open-minded — с широким кругозором <br>
+          Have a good sense of humor — имею хорошее чувство юмора</p>
+      <p>
+        <b>Пример ответа, который описывает features</b><br>
+        I am strong in Javascript, Python, C++, and automation testing. <br>
+        I was involved in a big project where I used all those skills a few years ago.
+        <b>Пример ответа, который описывает benefits</b> <br>
+        I helped build a video-hosting web app for a (X company) using (X technology stack) 
+        where I had end-to-end ownership and responsibility for the final product. 
+        It was really great to see the product go live and enable the customer 
+        to achieve their goals and boost their user growth.<br> 
+        Benefits (выгода/ценность, которую вы можете принести) всегда интереснее ваших features 
+        (то, что вы теоретически умеете делать), поэтому по возможности фокусируйтесь именно на первом. 
+        <b>Негативные фразы заменяйте на более позитивные</b><br>
+        This job wasn’t for me — I realized that (back-end development) was where my true passion lies. <br>
+        That’s where I’ve always seen myself headed <br>
+        That was wrong — I don’t think it was an optimal solution/decision <br>
+        I got tired of doing that job — I wanted more responsibility / I wanted to grow as a professional <br>
+        I don’t like working in the office — I’ve noticed that working from home allows me to be more productive, I get more things dome during the day <br>
+          <b>При проблемах со связью</b> <br> 
+          I’m sorry, I’m getting a lot of echo/feedback, I can’t hear you properly it ok if I call you back in a minute? <br>
+          I can’t get the video to work, my connection is too weak. Can we possibly do without it? / Can we just do an audio call? <br> 
+          You’re (the video is) frozen <br> 
+          Everything’s ok on my end. Can you hear me ok/alright? <br> 
+          Can we hop onto another platform? How about switching over to Google meets? <br> 
+          <b>Если хотите переспросить</b> <br>  
+          Come again? <br>
+          Could you say that again? <br> 
+          Could you repeat your question? <br> 
+          <b>фразы для смол тока</b> <br> 
+            I’m great, thanks! How are you doing today? / How’s your day so far?  <br> 
+            I’m doing very well, I’m excited to be doing this interview. I’ve heard a lot of good things about your company <br> 
+            It’s beautiful weather here, I hope it’s just as nice and sunny where you are <br> 
+            It’s a bit rainy and gloomy today but it’s all good. I don’t mind a bit of rain. Hopefully, it’s sunnier in your area though.  <br> 
+            Sounds great, I’m ready  <br> 
+            Sure, I’m all set to get started </p>
+
+  </div>
+
+<div id="Phrases" class="tabcontent">
+
+  <div class="phrases-wrap">
+    <div class="phrases-cont">
+      <h3>colloquial expressions</h3>
+      <p>We set off early tomorrow morning - Мы отправимся завтра утром <br>
+        To do everything ABOUT the house - Делать все по дому <br>
+        They LEFT FOR the seaside -  они покинули берег <br>
+        He rides down the hill -  Он съезжает с холма <br>
+        He rides downhill - Он съезжает вниз <br>
+        Squirrels live IN tree. There are cones ON the tree. <br>
+        He went to THE bed. HE went to bed. <br>
+        Well, you see - видите ли.. <br>
+        Well, the fact is.. Thing is that.. - ну дело в том.. <br>
+        I`am doing my best - Я делаю все возможное <br>
+        It is`nt my fault! - моя вина<br>
+        It is`nt your business! -не твое дело! <br>
+        through trial and error - метод проб и ошибок <br>
+        state-of-the-art - по последнему слову техники <br>
+        tech-savvy - технически подкованный <br>
+        to meet someone halfway - пойти на компромисс <br>
+        excellent persuation skills - навыки убеждения <br>
+        word of mouth - сарафанное радио <br>
+        to provide more insight - способствовать более глубокому пониманию <br>
+        assert right -s отстаивать права <br>
+        to file a lawsuit - подать иск <br>
+        to pay a fine - оплатить штраф <br>
+        to be broke - быть на мели <br>
+        And that goes double - тебе того же <br>
+        don`t let the bastards grind you down - не поддавайся <br>
+        this is no exuse - это не оправдание <br>
+        don`t get me wrong - не поймите неправильно <br>
+        get run into debt - влезть в долги <br>
+        Beat to windward - против ветра <br>
+        Good 'n' proper - как следует <br>
+        Get yourself together - возьми себя в руки <br>
+        Let something exciting happen today - Удачи<br>
+        That is what they are! Here it comes! - Вот они! <br>
+        would have been no use - не было бы смысла <br>
+        Have you got a cat? Do you have a cat? суть вопроса та же <br>
+        What car do you like? Which car do you like? <br>
+        It is three times as big - Он в три раза больше <br>
+        I could not help myself - ничего е могу с собой поделать <br>
+        Like a bolt from the blue - как гром среди ясного неба <br>
+        The worse for you - тем хуже для вас <br>
+        I can do without it - я могу обойтись без этого <br>
+        What would you do if you were in my place? - Что бы вы сделали на моем месте? <br>
+        I wish it were the summer - мне хотелось бы лета  <br>
+        advert to other matters - коснуться др. вопросов <br>
+        Despite our efforts - вопреки нашим усилиям <br>
+        Double-barreled - двусмысленно <br>
+        Fave rave - любимая песня <br>
+        Forth coming - предстоящий <br>
+        Be in charge of - быть ответственным за <br>
+        bottom line - итог <br>
+        Learn something by heart - учить наизусть <br>
+        HAd have enough - довольно <br>
+        Most likely/Most unlikely - очень не/похоже на то <br>
+        No can do - это невозможно <br>
+        No such thing - ничего подобного <br>
+        Not all that - вовсе не <br>
+        Nothing of the kind - ничего подобного <br>
+        Nowhere near - даже не близко <br>
+        You read my mind - ты читаешь мои мысли <br>
+        Do you mind if I open the door? - Вы не против если я открою дверь? <br>
+        To be honest - честно говоря <br>
+        At all - вообще <br>
+        Not to - mention не говоря уже о.. <br>
+        How about doing smth? - Как насчет сделать что либо? <br>
+        Or so - около того <br>
+        As a matter of fact - На самом деле <br>
+        I'm easy! - Мне все равно! <br>
+        Whatever happens - что бы ни случилось <br>
+        I hate to think - даже не хочу думать об этом <br>
+        You never know! - Никогда не знаешь! <br>
+        Not on your life! - Ни за что! <br>
+        Not likely - маловероятно <br>
+        Believe it or not - веришь или нет <br>
+        Tell me about it! - и не говори! <br>
+        Guess what - угадай что <br>
+        No big deal - ничего особенного <br>
+        Speak for yourself - говори за себя <br>
+        It's beyound me - это за пределами моего понимания <br>
+        Same here - у меня то же самое <br>
+        Do me a favour - сделай мне одолжение <br>
+        What's the use? - Что толку? <br>
+        Just between you and me - только между нами <br>
+        What's got into her? - Какая муха ее укусила? <br>
+        In your dreams/dream on - только в твоих мечтах\мечтай  <br>
+        Long time no see! -	Давно не виделись!  <br>
+        What are you up to? -	Чем занимаешься? <br>
+        Till next time! -	До следующего раза! <br>
+        Talk to you later! -	Поговорим с тобой позже! <br>
+        Until we meet again! -	До новой встречи! <br>
+        Send my love to … -	Передавай большой привет …  <br>
+         in brief -	вкратце <br>
+        In a word -	в двух словах <br>
+        As far / as to - что касается <br>
+        above all -	прежде всего <br>
+        What’s more -	кроме того <br>
+        By the way -	кстати <br>
+        Just for the record -	для справки; чтобы вы знали <br>
+        So as to / so that -так чтобы <br>
+        Either way -	так или иначе <br>
+        All the same -	без разницы <br>
+        On one hand -	с одной стороны <br>
+        On the other hand -	с другой стороны <br>
+        If I remember rightly / If I recall correctly -	если я правильно помню <br>
+        It can hardly be so -	Вряд ли это так <br>
+        Not a bit -	Ничуть <br>
+        Quite so -	Вполне верно <br>
+        In a way / to a certain extent -	В каком-то смысле <br>
+        I’m in / I’m game -	Я «за» <br>
+        I think I’ll pass -	Лучше без меня <br>
+        Deal! -	Идет! <br>
+        I'm looking forward to - it	Жду этого с нетерпением <br>
+        I beg your pardon! -	Прошу прощения! <br>
+        Thank you in advance! -	Спасибо заранее! <br>
+        Don’t mention it! -	Не стоит благодарности! <br>
+        How was it? -	Ну как? <br>
+        Did I get you right? -	Я правильно вас понял? <br>
+        Don’t take it to heart. -	Не принимайте близко к сердцу. <br>
+        I didn’t catch the last word. -	Я не понял последнее слово. <br>
+        Next time lucky! -	Повезет в следующий раз! <br>
+        Oh, that. That explains it. -	Вот оно что, это все объясняет.  <br>
+        So that’s where the trouble lies! -	Так вот в чем дело! <br>
+        Things happen. -	Всякое бывает. <br>
+        Where were we? -	На чем мы остановились?  <br>
+        What do you know! -	Кто бы мог подумать! <br>
+        Have you got a minute? -	У вас есть минутка? <br>
+        Out of order -	Не работает <br>
+        I appreciate it -	Я ценю это  <br>
+        I’m positive -	Я уверен <br>
+        I bet you don’t have guts to jump! - Готов поспорить, у тебя кишка тонка прыгнуть! <br>
+        I have a feeling -	У меня такое ощущение <br>
+         I could agree more - твердое согласие <br>
+        Nothing unusual - ничего особенного <br>
+        As for me -	Что касается меня <br>
+        till next time – до следующего раза <br>
+        It’s very kind of you – Это так мило с вашей стороны <br>
+        It does you credit – Это делает вам честь <br>
+        I told you all you need to know - я рассказал все что тебе нужно знать</p>
+    </div>
+    <div class="delimiter"></div>
+    <div class="phrases-cont">
+      <h3>colloquial idioms</h3>
+      <p>to split hair - спорить о мелочах <br>
+        took the plunge - отважиться <br>
+        sting in the tail - неприятная концовка  <br>
+        to be on the ball - быть расторопным <br>
+        the kick-off - начало <br>
+        to be sick as a dog - плохо себя чувствовать <br>
+        to look the picture of heath - быть в отличном состоянии здоровья <br>
+        to recharge one's batteries - набраться энергии <br>
+        to break the ice - сделать первый шаг <br>
+        to come rain or shine - что бы ни случилось <br>
+        on cloud nine - на седьмом небе от счастья <br>
+        to sing another tune - менять решение <br>
+        to put pen to paper - начать писать <br>
+        to hit the road - отправляться в путь <br>
+        itchy feet - чемоданное настроение <br>
+        a redeye flight - ночной рейс <br>
+        Cry wolf - поднимать ложную тревогу <br>
+        Down to Earth - приземленный <br>
+        In the same boat - в одинаковых условиях <br>
+        Lose track of - потерять из виду <br>
+        Lost for words - неспособный подобрать слова <br>
+        Lucky break - счастливый случай <br>
+        On the spur of the moment - под влиянием момента  <br>
+        Once and for all - на все времена <br>
+        Save face - сохранить лицо <br>
+        Go with the flow - плыть по течению  <br>
+        As easy as ABC - проще простого <br>
+        In black and white - черным по белому <br>
+        Copycat - плагиатор <br>
+        On the wagon - бросить пить, дать зарок <br>
+        Jumping on the bandwagon - присоединиться к общему делу <br>
+        Fallen of the wagon - снова забухать <br>
+        In the driver's seat - у руля <br>
+        Backseat driver - дающий непрошенные советы <br>
+        Sunday driver - неумелый водитель <br>
+        Reinventiung the wheel - изобретать колесо <br>
+        Asleep at the wheel - забыть о своих обязанностях <br>
+        let's hit the road - отправиться в путь <br>
+        middle-of-the-road - умеренный <br>
+        A long way down the road - впоследствии <br>
+        I missed the boat - поезд ушел <br>
+        It's plain salling - идет как по маслу <br>
+        a piece of cake - легкое дело <br>
+        big cheese - бугор <br>
+        apple of smb eye - фаворит  <br>
+        It sounds nice, does'nt it? - Звучит неплохо, не так ли? <br>
+        Healthy lifestyle - ЗОЖ <br>
+        Wait your turn - ожидай своей очереди  <br>
+        have time - иметь время <br>
+        make time - выделить время <br>
+        take time - занимать время <br>
+        do one's time - сидеть в тюрьме  <br>
+        You pulling my legs - ты меня разыгрываешь <br>
+        His business went to the dogs - Его бизнес пришел в упадок  <br>
+        To keep on eye on smth - приглядывать за чем либо <br>
+        To bet one's bottom dollar - давать голову на отсечение <br>
+        to make a beeline for smth - идти прямиком к чему либо <br>
+        to have a bone to pick with someone - иметь тему для серьезного разговора <br>
+        to be a real card - быть веселым <br>
+        to be on the tip of one's tongue - вертеться на языке  <br>
+        to be in hot water - иметь неприятности <br>
+        to be fit as a fidle = keep fit <br>
+        to eat one's own words - взять слова обратно <br>
+        to feel like doing smth - хотеть сделать что либо <br>
+        to be about to do smth - собираться сделать что либо <br>
+        to keep a stiff upper lip - быть храбрым <br>
+        to pass away - уйти в мир иной <br>
+        to paint the town red - отпраздновать на полную <br>
+        had better - лучше бы это сделать <br>
+        to sound fishy - звучит подозрительно <br>
+        a lot of a hot air - преувеличение <br>
+        red tape - бюрократия <br>
+        well off - богатый <br>
+        to be short of breath - задыхаться <br>
+        to be in the family way - быть в положении <br>
+        to do from scratch - делать с самого начала <br>
+        to be on the go - быть в делах <br>
+        to go out like a light - отрубиться</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="Prov" class="tabcontent">
+  <h3>Proverbs</h3>
+  <p class="col2">
+    The tiniest friend can be the mightiest help<br>
+    Lend your money and lose your friend<br>
+    Don`t try to walk before you can crawl<br>
+    An apple a day keeps doctors away<br>
+    He makes no mistakes makes nothing</p>
+    <hr>
+    <h3>хитросделанные фразы</h3>
+    <p>Little did he know about his future - Ничего он не знал о своем будущем<br>
+      On no account may the queen be rude - Ни в коем случае королева не может быть грубой<br>
+      No sooner did she open the door than her dog ran out - Как только она открыла дверь ее собака выбежала<br>
+      In no way was it planned - никак это не было запланировано<br>
+      Only then did I undersyand the danger we were in - только тогда я понял в какой опасности мы были<br>
+      He last had a burger ten years ago - он ел бургер десять лет назад<br>
+      I wish I could explain it - Жаль что я не смог объяснить этого<br>
+      the only thing left is my dying root<br>
+      Even your own shadow leaves you when you are in dark</p>
+</div>
+
+</div>
+
+
+
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+}
+</script>
+   
+</body>
+</html>
